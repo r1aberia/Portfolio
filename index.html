@@ -85,6 +85,57 @@ footer{background:var(--navy);color:#aebbd1;text-align:center;padding:18px;font-
 .dark-mode .hero{background:#18243a}.dark-mode h1,.dark-mode .section-title,.dark-mode .subhead,.dark-mode .project h3{color:#e7edf7}
 .dark-mode .panel,.dark-mode .card,.dark-mode .project,.dark-mode .skill{background:#1d293b;color:#c6d1e1}
 .dark-mode .lead,.dark-mode .panel,.dark-mode .project p{color:#bac6d8}
+
+/* Improve text readability in dark mode */
+.dark-mode .lead,
+.dark-mode .panel,
+.dark-mode .panel p,
+.dark-mode .details strong,
+.dark-mode .project p,
+.dark-mode .edu-card p,
+.dark-mode .field label,
+.dark-mode .contact-info p,
+.dark-mode .project-modal-box p,
+.dark-mode .subhead {
+  color: #d2dbea;
+}
+.dark-mode h1,
+.dark-mode .section-title,
+.dark-mode .subhead,
+.dark-mode .project h3,
+.dark-mode .project-modal-box h3,
+.dark-mode .details strong {
+  color: #f1f5fb;
+}
+.dark-mode .field input,
+.dark-mode .field textarea {
+  background: #26364d;
+  color: #f1f5fb;
+}
+.dark-mode .field input::placeholder,
+.dark-mode .field textarea::placeholder,
+.dark-mode .project-search::placeholder {
+  color: #aebbd0;
+  opacity: 1;
+}
+.dark-mode .project-search {
+  background: #1d293b;
+  color: #f1f5fb;
+  border-color: #52627a;
+}
+.dark-mode .project-date {
+  background: #263b60;
+  color: #c9dcff;
+}
+.dark-mode .project-modal-box {
+  background: #1d293b;
+  color: #f1f5fb;
+}
+.dark-mode .project-empty {
+  background: #1d293b;
+  color: #d2dbea;
+}
+
 @media(max-width:760px){header{height:60px;min-height:60px}.nav{height:60px;padding:0 16px;gap:12px;position:relative}.menu-toggle{display:block;order:2;margin-left:auto}nav{display:none;position:absolute;top:60px;left:0;right:0;z-index:30;order:4;width:100%;padding:10px 16px 16px;background:var(--blue);box-shadow:0 8px 12px #1d376333;flex-direction:column;align-items:stretch;gap:0}nav.open{display:flex}nav a{display:block;padding:12px 8px;font-size:12px;white-space:normal;border-top:1px solid #ffffff26}nav a:hover{background:#ffffff18;transform:none}.theme{order:3;flex-shrink:0}.hero-inner{grid-template-columns:1fr 170px;gap:18px;padding:34px 18px;min-height:250px}.portrait{height:180px}.hero-inner .lead{font-size:12px}.hero-inner .btn{padding:9px 12px}.grid2,.contact-grid{grid-template-columns:1fr}.project-grid,.skill-grid{gap:14px}.project img{height:110px}main{padding:26px 18px}.summary{margin-top:42px}.cv-card{gap:24px;flex-wrap:wrap}.section-title{font-size:24px}}
 @media(max-width:480px){.hero-inner{grid-template-columns:1fr}.portrait{grid-row:1;width:145px;height:145px;justify-self:start}.hero-inner{padding:26px 18px}.project-grid{grid-template-columns:repeat(2,1fr)}.skill-grid{grid-template-columns:repeat(2,1fr)}.project img{height:90px}.edu-card{gap:12px}.edu-card img{width:110px}.section-title{font-size:22px}}
 </style>
@@ -107,7 +158,7 @@ footer{background:var(--navy);color:#aebbd1;text-align:center;padding:18px;font-
 <section class="projects" id="projects"><h2 class="section-title">Projects</h2><form class="project-tools" id="projectSearchForm" role="search"><input class="project-search" id="projectSearch" type="search" placeholder="Search project category or name..." aria-label="Search projects"><button class="project-search-btn" type="submit">Search</button></form><div class="project-grid" id="projectGrid">
     <article class="project"><img src="Persimon.png" alt="Persimmon illustration"><h3>Project 1</h3><span class="project-date">Date: 2026</span><p>Persimmon</p><p>A charming digital illustration of a vibrant, round orange fruit resembling a persimmon, featuring a detailed green calyx at the top with a whimsical metallic washer and screw-like stem piercing through the center.</p>
      <p>GIMP</p></article>
-    <article class="project"><img src="A Logo.png" alt="Brand identity logo"><h3>Project 2</h3><span class="project-date">Date: 2026</span><p>Brand Identity Logo</p><p>A minimalist logo centered on a white background, featuring a bold, vibrant blue letter "A" framed within a light blue circular badge, accompanied by the subtle cursive signature "Rexter." tucked inside the upper-left curve.</p></<p>GIMP</p></article>
+    <article class="project"><img src="A Logo.png" alt="Brand identity logo"><h3>Project 2</h3><span class="project-date">Date: 2026</span><p>Brand Identity Logo</p><p>A minimalist logo centered on a white background, featuring a bold, vibrant blue letter "A" framed within a light blue circular badge, accompanied by the subtle cursive signature "Rexter." tucked inside the upper-left curve.</p><p>GIMP</p></article>
     <article class="project"><img src="adidas.jpg" alt="Typography layout"><h3>Project 3</h3><span class="project-date">Date: 2026</span><p>Typography Layout</p><p>A creative typography design featuring the adidas brand and its iconic "Impossible Is Nothing" slogan split into colorful, contrasting blocks, framed with ornate golden borders and finished with a "Since 1949" stamp.</p><p>CanVa</p></article>
     <article class="project"><img src="Landing Page Banner.jpg" alt="Coffee shop web layout"><h3>Project 4</h3><span class="project-date">Date: 2026</span><p>Coffee Shop Web Layout</p><p>A cozy autumn-themed website banner for "Brew Haven," featuring a person holding a hot drink under a knit blanket near a window with fall foliage, complete with navigation links, a call-to-action button, and product highlights for a Pumpkin Spice Latte.</p><p>GIMP</p></article>
     <article class="project"><img src="figma_landscape.jpeg" alt="Figma Wireframing Layout"><h3>Project 5</h3><span class="project-date">Date: 2026</span><p>Figma Wireframing Layout</p><p>A clean, modern personal portfolio web page layout showcasing profile details, project highlights, technical and professional skill cards, education and credentials, CV download options, and a contact section.</p><p>FIGMA</p></article>
